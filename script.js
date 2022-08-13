@@ -1,5 +1,5 @@
 let people = ['Мама', 'Мама', 'Мама', 'Мама', 'Мама', 'Мама', 'Дима', 'Дима'];
-let sumPeople = Math.floor(Math.random() * people.length);
+let sumPeople = Math.round(Math.random() * people.length);
 let resultPeople = people[sumPeople];
 function bnt(){
     let documentReuslt = document.getElementById('result');
