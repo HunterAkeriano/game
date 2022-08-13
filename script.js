@@ -17,6 +17,11 @@ function bnt(){
 
     }else if(resultPeople == 'Дима'){
         documentFunny.innerHTML = 'Дима програв';
+        let myButton = document.createElement('button');
+        let myText = document.createTextNode('я не хочу мити посуд');
+        myButton.appendChild(myText);
+        document.body.appendChild(myButton);
+        myButton.addEventListener('click', image);
     }
 }
 function image(){
