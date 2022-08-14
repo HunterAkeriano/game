@@ -32,7 +32,8 @@ function bnt(){
         
 
     }else if(resultPeople == undefined){
-        documentReuslt.innerHTML = 'Обнови сторінку, щось пішло не за планом';
+        documentReuslt.innerHTML = 'Сторінка оновиться, вийшов збій';
+        location.reload();
     }
 }
 function image(){
@@ -44,13 +45,29 @@ function image(){
 }
 function btnMother(){
     let resultFunction = document.getElementById('h4');
-    resultFunction.innerHTML = `Шанс мами збыльшено на: ${++counterMom}`
+    let resultFunctionDima = document.getElementById('h5');
+    resultFunction.innerHTML = `Шанс мами збільшено на: ${++counterMom}`
+    resultFunctionDima.innerHTML = `Шанс Діми збільшено на: ${--counterDima}`
+    if(counterDima === -1){
+        ++counterDima;
+        counterDima = 0;
+        resultFunctionDima.innerHTML = `Шанс мами збільшено на: ${counterDima}`
+        
+    }
     people.push('Дима');
     console.log(people);
 }
 function btnDima(){
+    let resultFunctionMom = document.getElementById('h4');
     let resultFunction = document.getElementById('h5');
-    resultFunction.innerHTML = `Шанс Діми збыльшено на: ${++counterDima}`
+    resultFunction.innerHTML = `Шанс Діми збільшено на: ${++counterDima}`
+    resultFunctionMom.innerHTML = `Шанс мами збільшено на: ${--counterMom}`
+    if(counterMom == -1){
+        ++counterMom;
+        counterMom = 0;
+        resultFunctionMom.innerHTML = `Шанс мами збільшено на: ${counterMom}`
+        
+    }
     people.push('Мама');
     console.log(people);
 }
