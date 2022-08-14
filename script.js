@@ -1,23 +1,32 @@
+// инициализация массива из Именами
 let people = ['Мама', 'Дима', 'Мама', 'Дима', 'Мама', 'Дима', 'Дима', 'Мама'];
+// инициализация счётчиков
 let counterDima = 0;
 let counterMom = 0;
+// функция главной Кнопки Узнать Результат
 function bnt(){
-    let sumPeople = Math.round(Math.random() * people.length);
-    let resultPeople = people[sumPeople];
+    let sumPeople = Math.round(Math.random() * people.length); // Рандомный элемент из массива
+    let resultPeople = people[sumPeople]; // результат вычесления записывается в переменную
+    // получения элементов ДОМа
     let documentReuslt = document.getElementById('result');
     let documentFunny = document.getElementById('param');
+    // запись в ДОМ результат случайного вычесления того кто будет мыть посуду
     documentReuslt.innerHTML = resultPeople;
+    // Добавления элемента Диссаблед, который больше не позволит дублировать элементы
     let btnPlay = document.getElementById('btnPlay');
     btnPlay.getAttribute('disabled');
     btnPlay.disabled = true;
+    //условные операторы если выипало определенное значение
     if(resultPeople == 'Мама'){
+        // запись на страницу результата
         documentFunny.innerHTML = 'Мама програла';
+        // создание кнопки если человек не хочет мыть посуду
         let myButton = document.createElement('button');
         let myText = document.createTextNode('я не хочу мити посуд');
         myButton.appendChild(myText);
         document.body.appendChild(myButton);
-        myButton.addEventListener('click', image);
-        myButton.classList.add('active');  
+        myButton.addEventListener('click', image); // добавления события Клик и вызов функции добавления картинки
+        myButton.classList.add('active');  // добавления класса для изменения стилей
             
 
 
@@ -33,7 +42,7 @@ function bnt(){
 
     }else if(resultPeople == undefined){
         documentReuslt.innerHTML = 'Сторінка оновиться, вийшов збій';
-        location.reload();
+        location.reload(); // перезагрузка страницы
     }
 }
 function image(){
