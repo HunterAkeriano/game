@@ -43,13 +43,13 @@ function image(){
 }
 function btnMother(){
     let resultFunction = document.getElementById('h4');
-    resultFunction.innerHTML = `Шанс мами збыльшено на: ${counter++}`
+    resultFunction.innerHTML = `Шанс мами збыльшено на: ${++counter}`
     people.push('Дима');
     console.log(people);
 }
 function btnDima(){
     let resultFunction = document.getElementById('h5');
-    resultFunction.innerHTML = `Шанс Діми збыльшено на: ${counter++}`
+    resultFunction.innerHTML = `Шанс Діми збыльшено на: ${++counter}`
     people.push('Мама');
     console.log(people);
 }
