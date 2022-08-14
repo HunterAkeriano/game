@@ -63,3 +63,7 @@ p{
     transition: box-shadow 0.3s, transform 0.3s;
     cursor: pointer;
 }
+.chans{
+    display: flex;
+    justify-content: space-around;
+}
