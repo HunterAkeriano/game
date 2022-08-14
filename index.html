@@ -5,24 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кто моет посуду</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <center>
+    <div class="play_gaming">
     <h1>Угадай хто сьогодні буде мити посуд</h1>
     <p>Для того щоб угадати, хто сьогодні миє посуд - натисни на кнопку</p>
-    <button onclick="bnt()">Вгадати</button>
+    <div class="btn_playing">
+    <button class="btn" onclick="btnMother()">Додати шансів на вийграш Мамі</button> &nbsp;&nbsp;&nbsp; <button class="btn" onclick="bnt()" id="btnPlay">Вгадати</button> &nbsp;&nbsp;&nbsp; <button class='btn' onclick="btnDima()">Додати шансів на вийграш Дімі</button>
+</div>
     <h2 id="result"></h2>
     <p id="param"></p>
     <h3 id="h3"></h3>
     <div class="container"></div>
-    <script src="script.js"></script>
-</center>
-<style>
-    .container{
-        width: auto;
-        height: auto;
-    }
-</style>
+</div>
+    
+
+
+<script src="script.js"></script>
+
 </body>
 </html>

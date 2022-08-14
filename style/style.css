@@ -1,0 +1,65 @@
+body{
+    background-image: url(/image/background.jpg);
+}
+h1, h2{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.973);
+    font-weight: bold;
+}
+h3{
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+}
+p{
+    font-size: 20px;
+    color: rgba(255, 0, 0, 0.973);
+    font-weight: bold;
+}
+.play_gaming{
+    text-align: center;
+    align-items: center;
+}
+.active{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid #BFE2FF;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', Тahoma, sans-serif;
+    background: #337AB7;
+    transition: box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+}.btn:hover,
+.btn:active,
+.btn:focus{
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    color: #FFF;
+}
+.btn{
+    display: inline-flex;
+    margin: 10px;
+    text-decoration: none;
+    border: 2px solid #BFE2FF;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', Тahoma, sans-serif;
+    background: #337AB7;
+    transition: box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+}
