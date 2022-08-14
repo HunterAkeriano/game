@@ -1,5 +1,6 @@
 let people = ['Мама', 'Дима', 'Мама', 'Дима', 'Мама', 'Дима', 'Дима', 'Мама'];
-let counter = 0;
+let counterDima = 0;
+let counterMom = 0;
 function bnt(){
     let sumPeople = Math.round(Math.random() * people.length);
     let resultPeople = people[sumPeople];
@@ -43,13 +44,13 @@ function image(){
 }
 function btnMother(){
     let resultFunction = document.getElementById('h4');
-    resultFunction.innerHTML = `Шанс мами збыльшено на: ${++counter}`
+    resultFunction.innerHTML = `Шанс мами збыльшено на: ${++counterMom}`
     people.push('Дима');
     console.log(people);
 }
 function btnDima(){
     let resultFunction = document.getElementById('h5');
-    resultFunction.innerHTML = `Шанс Діми збыльшено на: ${++counter}`
+    resultFunction.innerHTML = `Шанс Діми збыльшено на: ${++counterDima}`
     people.push('Мама');
     console.log(people);
 }
