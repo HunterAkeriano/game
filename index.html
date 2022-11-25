@@ -4,28 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кто моет посуду</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media/media.css">
+    <title>Learnico</title>
 </head>
 <body>
-    <header class="header">
-    <div class="play_gaming">
-    <h1>Угадай хто сьогодні буде мити посуд</h1>
-    <p>Для того щоб угадати, хто сьогодні миє посуд - натисни на кнопку</p>
-    <div class="btn_playing">
-    <button class="btn" onclick="btnMother()">Додати шансів на вийграш Мамі</button> &nbsp;&nbsp;&nbsp; <button class="btn" onclick="bnt()" id="btnPlay">Вгадати</button> &nbsp;&nbsp;&nbsp; <button class='btn' onclick="btnDima()">Додати шансів на вийграш Дімі</button>
-</div>
-<div class="chans">  
-    <p id="h4">Шанс Мами</p>
-    <p id="h5" class="h5">Шанс Діми</p>
-    </div> 
-    <h2 id="result"></h2>
-    <p id="param"></p>
-    <h3 id="h3"></h3>
-    <div class="container"></div>
-</div>
-</header>
-<script src="script.js"></script>
 
+    <div class="pages">
+        <div class="pop_up">
+            <div class="pop_up_container">
+                <div class="pop_up_body">
+                    <p class="form-title">Feedback</p>
+                    <form action="/">
+                        <div class="form-input">
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        
+                        <div class="form-input">
+                            <input type="number" name="number" placeholder="Your Number">
+                        </div>
+                        <div class="form-input">
+                            <input type="email" name="email" placeholder="Your E-mail">
+                        </div>
+                        <div class="form-input">
+                            <textarea name="whats" cols="30" rows="10" placeholder="Send your questions"></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                    <div class="pop_up_close">&#10006</div>
+                </div>
+            </div>
+        </div>
+        <div class="pages__info" id="pages-info">
+            <a href="#" class="pages__info-link">Create Award Winning Websites In Webflow</a>
+            <img id="pages-close" src="images/icons/close.svg" alt="">
+        </div>
+
+        <header id="header">
+            <div class="container">
+                <div class="header">
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__nav-ul">
+                            <li><a class="nav-link" href="#">Home</a></li>
+                            <li><a class="nav-link" href="#">About</a></li>
+                            <li><a class="nav-link" href="#">Blog</a></li>
+                            <li><a class="nav-link" href="#">Contact</a></li>
+                            <li><a class="nav-link" href="#">Courses</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__btn">
+                        <button class="open_pop_up_2">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="code">
+                <div class="container">
+                    <div class="coding">
+                        <div class="coding__left">
+                            <h1 class="coding__left-title">Become an No-Code expert and find a job</h1>
+                            <p class="coding__left-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel molestie magna curabitur tincidunt nunc sit amet.</p>
+                            <div class="coding__left-btn">
+                                <button class="open_pop_up">Explore Courses</button>
+                                <div class="video-watch">
+                                    <a href="#">Watch Video <img src="images/icons/play_circle_filled.svg" alt=""></a>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="coding__left-people">
+                                <div class="people-img">
+                                    <img class="block-one" src="images/people/people1.png" alt="">
+                                    <img class="block-img" src="images/people/people2.png" alt="">
+                                    <img class="block-img" src="images/people/people3.png" alt="">
+                                    <img class="block-img" src="images/people/people4.png" alt="">
+                                    <img class="block-img" src="images/people/people5.png" alt="">
+                                </div>
+                                <div class="people-reviews">
+                                    <div class="stars">
+                                        <img src="images/icons/star.svg" alt="">
+                                        <img src="images/icons/star.svg" alt="">
+                                        <img src="images/icons/star.svg" alt="">
+                                        <img src="images/icons/star.svg" alt="">
+                                        <img src="images/icons/star.svg" alt="">
+                                    </div>
+                                    <p>From 3k+ reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coding__right">
+                            <img class="coding__right-img" src="images/bg-header.png" alt="">
+                            <img class="coding__right-scope" src="images/icons/babel.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
