@@ -393,4 +393,101 @@ header.fixed:hover {
   position: absolute;
   left: -110px;
   top: 50%;
+}
+
+.about {
+  padding-top: 80px;
+  padding-bottom: 250px;
+  background: #00353B;
+}
+.about-title {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  cursor: default;
+  color: #FFFFFF;
+}
+
+.platform {
+  margin-top: -200px;
+}
+.platform__content {
+  background: #FCD8CA;
+  border-radius: 24px;
+  padding: 64px 0px;
+}
+.platform__content-link a {
+  width: 77px;
+  margin: 0 auto;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1F2937;
+  background: #fff;
+  text-align: center;
+  padding: 4px 8px;
+  transition: 0.3s;
+}
+.platform__content-link a:hover {
+  color: #fff;
+  background-color: #1F2937;
+  font-size: 10px;
+}
+.platform__content-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  /* identical to box height, or 120% */
+  text-align: center;
+  color: #1F2937;
+  margin-top: 11px;
+  cursor: default;
+}
+.platform__content-text {
+  max-width: 730px;
+  margin: 0 auto;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* or 150% */
+  text-align: center;
+  color: #374151;
+  margin-top: 30px;
+  cursor: default;
+}
+.platform__content-btn {
+  margin-top: 40px;
+}
+.platform__content-btn a {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  color: #FFFFFF;
+  background: #1F2937;
+  border: 1px solid #1F2937;
+  border-radius: 8px;
+  width: 130px;
+  margin: 0 auto;
+  padding: 13px 0;
+  transition: 0.3s;
+}
+.platform__content-btn a:hover {
+  color: #1F2937;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

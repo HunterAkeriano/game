@@ -68,7 +68,7 @@ const firstHeight = first.offsetHeight;
 
 window.addEventListener('scroll', ()=>{
     let scrollDistance = window.scrollY;
-    if(scrollDistance >= headerHeight + 20){
+    if(scrollDistance >= headerHeight + 10){
         header.classList.add('fixed');
         console.log(scrollDistance)
     }else{

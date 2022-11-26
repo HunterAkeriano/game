@@ -20,8 +20,28 @@
 
 
 
-
-
+/* No-code Education Platform */
+@media(max-width: 750px){
+    .platform__content-title{
+        font-size: 24px;
+    }
+    .platform__content-text{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+@media(max-width: 402px){
+    .platform__content-title{
+        font-size: 20px;
+    }
+    .platform__content-text{
+        font-size: 10px;
+        
+    }
+    .platform__content{
+        padding: 20px 5px;
+    }
+}
 
 
 
