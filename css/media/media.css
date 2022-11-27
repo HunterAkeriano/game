@@ -278,3 +278,33 @@
         font-size: 22px;
     }
 }
+
+
+/* swiper 3 */
+@media(max-width: 564px){
+    .latest__text h3{
+        font-size: 24px;
+        line-height: 25px;
+    }
+    .latest .swiper3 .swiper-wrapper .swiper-slide .swiper-text h4{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .latest .swiper3 .swiper-wrapper .swiper-slide{
+        min-height: 300px;
+    }
+    .latest .swiper3 .swiper-wrapper .swiper-slide .swiper-text p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+/* learning */
+@media(max-width: 538px){
+    .learning h3{
+        font-size: 24px;
+    }
+    .learning p {
+        font-size: 12px;
+    }
+}

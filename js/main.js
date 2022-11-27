@@ -109,7 +109,7 @@ function onEntry(entry) {
     });
   }
 let options = {
-    threshold: [0.5] };
+    threshold: [0.2] };
   let observer = new IntersectionObserver(onEntry, options);
   let elements = document.querySelectorAll('.element-animation');
   for (let elm of elements) {
@@ -128,6 +128,29 @@ let swiper2 = new Swiper(".swiper2",{
         delay: 3000,
         disableOnInteraction: false,
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 1.3,
+            centerSlides: 'true',
+        },
+        950: {
+            slidesPerView: 1.5,
+            spaceBetween: 30,
+        },
+        1095: {
+            slidesPerView: 2.5,
+        },
+        1290:{
+          slidesPerView: 3,
+        }
+    }
+  });
+
+  let swiper3 = new Swiper(".swiper3",{
+    spaceBetween: 30,
+  
+    centerSlides: 'true',
+    fade: 'true',
     breakpoints: {
         320: {
             slidesPerView: 1.3,
