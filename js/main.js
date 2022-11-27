@@ -115,3 +115,33 @@ let options = {
   for (let elm of elements) {
     observer.observe(elm);
   }
+
+
+//   swiper 2
+let swiper2 = new Swiper(".swiper2",{
+    spaceBetween: 30,
+  
+    centerSlides: 'true',
+    fade: 'true',
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1.3,
+            centerSlides: 'true',
+        },
+        950: {
+            slidesPerView: 1.5,
+            spaceBetween: 30,
+        },
+        1095: {
+            slidesPerView: 2.5,
+        },
+        1290:{
+          slidesPerView: 3,
+        }
+    }
+  });

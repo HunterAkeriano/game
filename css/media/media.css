@@ -1,3 +1,39 @@
+/* students */
+@media(max-width: 1263px){
+    .students__content{
+        flex-direction: column;
+    }
+    .students__content-left{
+        width: 100%;
+        border-radius: 24px 24px 0 0;
+    }
+    .students__content-right img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+@media(max-width: 837px){
+    .students__content-left{
+        padding: 50px 20px;
+    }
+    .students__content-left h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+@media(max-width: 539px){
+    .students__content-left h2{
+        font-size: 20px;
+        line-height: 29px;
+    }
+    .students__content-left p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+
 /* coding */
 @media(max-width: 1252px){
     .coding{
@@ -32,7 +68,17 @@
         padding: 137px 0;
     }
 }
-
+/* info */
+@media(max-width:850px){
+    .info__content{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .info__content-block{
+        width: 100%;
+        margin-bottom: 40px;
+    } 
+}
 
 
 
@@ -210,5 +256,25 @@
     }
     .coding__left-btn button:hover{
         padding: 13px 25px;
+    }
+}
+
+/* swiper2 */
+@media(max-width: 600px){
+    .reviews__content h3{
+        font-size: 30px;
+    }
+    .reviews__content p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .reviews__content .swiper2 .swiper-wrapper .swiper-slide p{
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+@media(max-width: 397px){
+    .reviews__content h3{
+        font-size: 22px;
     }
 }
