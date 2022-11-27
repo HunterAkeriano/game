@@ -168,3 +168,4 @@ let swiper2 = new Swiper(".swiper2",{
         }
     }
   });
+console.log('dasd')
