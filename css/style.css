@@ -490,4 +490,212 @@ header.fixed:hover {
   background: #FFFFFF;
   border: 1px solid #FFFFFF;
   font-size: 12px;
+}
+
+.courses {
+  margin-top: 160px;
+}
+.courses__top {
+  display: flex;
+  justify-content: space-between;
+}
+.courses__top-info {
+  padding: 137px 50px;
+}
+.courses__top-info h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  /* or 120% */
+  cursor: default;
+  color: #1F2937;
+}
+.courses__top-info p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* or 150% */
+  margin-top: 30px;
+  cursor: default;
+  color: #4B5563;
+}
+.courses__top-info .courses-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.courses__top-info .courses-btn button {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: #1F2937;
+  border: 1px solid #1F2937;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 12px 25px;
+  transition: 0.3s;
+  margin-right: 15px;
+}
+.courses__top-info .courses-btn button:hover {
+  background: white;
+  border: 1px solid white;
+  color: #1F2937;
+  font-size: 12px;
+  padding: 12px 35px;
+}
+.courses__top-info .courses-btn a {
+  display: flex;
+  align-items: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111827;
+  transition: 0.3s;
+}
+.courses__top-info .courses-btn a img {
+  padding-left: 10px;
+}
+.courses__top-info .courses-btn a:hover {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.tranding {
+  margin-top: 100px;
+}
+.tranding .trand-btn {
+  display: block;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1F2937;
+  background: #FCD8CA;
+  border-radius: 4px;
+  border: 0;
+  padding: 4px 8px;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+.tranding .trand-btn:hover {
+  background: #1F2937;
+  color: #FCD8CA;
+}
+.tranding-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  /* identical to box height, or 120% */
+  text-align: center;
+  color: #1F2937;
+  margin-top: 11px;
+  cursor: default;
+}
+.tranding-text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* or 150% */
+  text-align: center;
+  color: #4B5563;
+  max-width: 730px;
+  margin: 0 auto;
+  margin-top: 30px;
+  cursor: default;
+}
+.tranding .swiper1 {
+  overflow: hidden;
+  margin-top: 60px;
+}
+.tranding .swiper1 .swiper-slide {
+  position: relative;
+  background: #00353B;
+  border-radius: 16px;
+  padding: 32px 0px 32px 24px;
+  width: 100%;
+  min-height: 500px;
+}
+.tranding .swiper1 .swiper-slide span {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: #1F2937;
+  cursor: default;
+  transition: 0.3s;
+}
+.tranding .swiper1 .swiper-slide span:hover {
+  background: #1F2937;
+  color: white;
+}
+.tranding .swiper1 .swiper-slide h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  /* identical to box height, or 140% */
+  color: #FFFFFF;
+  margin: 15px 0;
+  cursor: default;
+}
+.tranding .swiper1 .swiper-slide p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height, or 150% */
+  color: #FFFFFF;
+  cursor: default;
+}
+.tranding .swiper1 .swiper-slide img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.tranding .swiper1 .swiper-slide a {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: #22A45A;
+  border: 1px solid #22A45A;
+  border-radius: 8px;
+  padding: 9px 21px;
+  max-width: 160px;
+  transition: 0.3s;
+}
+.tranding .swiper1 .swiper-slide a:hover {
+  background: white;
+  color: #22A45A;
+  border: 1px solid #fff;
 }/*# sourceMappingURL=style.css.map */

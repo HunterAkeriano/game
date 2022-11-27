@@ -15,6 +15,23 @@
     }
 } 
 
+/* courses */
+@media(max-width: 1155px){
+    .courses{
+        margin-top: 50px;
+    }
+    .courses__top{
+        flex-direction: column-reverse;
+    }
+    .courses__top-img img{
+        display: block;
+        margin: 0 auto;
+        width: 95%;
+    }
+    .courses__top-info{
+        padding: 137px 0;
+    }
+}
 
 
 
@@ -30,6 +47,51 @@
         margin-top: 10px;
     }
 }
+
+/* courses */
+@media(max-width: 605px){
+    .courses__top-info h3{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .courses__top-info{
+        padding: 50px 0;
+    }
+    .courses__top-info p {
+        font-size: 14px;
+    }
+}
+
+
+
+/* swiper1 */
+@media(max-width: 548px){
+    .tranding .swiper1 .swiper-slide img{
+        width: 50%;
+    }
+    .tranding .swiper1 .swiper-slide{
+        min-height: 390px;
+    }
+}
+@media(max-width: 481px){
+    .tranding .swiper1 .swiper-slide img{
+        width: 39%;
+    }
+    .tranding .swiper1 .swiper-slide h4{
+        font-size: 18px;
+    }
+    .tranding .swiper1 .swiper-slide p{
+        font-size: 14px;
+    }
+    .tranding .swiper1 .swiper-slide a{
+        font-size: 12px;
+        padding: 9px 15px;
+    }
+}
+
+
+
+
 @media(max-width: 402px){
     .platform__content-title{
         font-size: 20px;
@@ -40,6 +102,20 @@
     }
     .platform__content{
         padding: 20px 5px;
+    }
+}
+
+
+@media(max-width: 400px){
+    .courses__top-info h3{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .courses__top-info{
+        padding: 50px 0;
+    }
+    .courses__top-info p {
+        font-size: 14px;
     }
 }
 
