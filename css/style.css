@@ -575,6 +575,9 @@ header.fixed:hover {
 
 .tranding {
   margin-top: 100px;
+  max-width: 1320px;
+  padding: 0 30px;
+  margin: 0 auto;
 }
 .tranding .trand-btn {
   display: block;

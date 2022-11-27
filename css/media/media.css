@@ -65,6 +65,12 @@
 
 
 /* swiper1 */
+@media (max-width: 768px) {
+    .tranding{
+        padding-right: 0px;
+    }
+}
+
 @media(max-width: 548px){
     .tranding .swiper1 .swiper-slide img{
         width: 50%;
