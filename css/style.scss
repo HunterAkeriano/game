@@ -10,9 +10,6 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-body{
-    overflow-x: hidden;
-}
 
 body,
 h1,
@@ -41,6 +38,9 @@ a{
 body{
     font-family: 'Poppins', sans-serif;
     font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
 }
 
 // pages
@@ -303,6 +303,7 @@ header.fixed:hover{
 
             cursor: default;
             color: #FFFFFF;
+           
         }
         &-text{
             font-family: 'DM Sans';
@@ -403,6 +404,17 @@ header.fixed:hover{
                 }
             }
         }
+    }
+
+
+    &__left.element-animation{
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: all 1.5s;
+    }
+    &__left.element-animation.element-show{
+        transform: translateX(0px);
+        opacity: 1;
     }
     &__right{
         position: relative;
@@ -522,6 +534,13 @@ header.fixed:hover{
         }
     }
 }
+.platform.element-animation{
+    opacity: 0;
+}
+.element-animation.element-show{
+    opacity: 1;
+    transition: opacity 1s;
+}
 
 .courses{
     margin-top: 160px;
@@ -529,6 +548,17 @@ header.fixed:hover{
     &__top{
         display: flex;
         justify-content: space-between;
+
+        &-img.element-animation{
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 1s;
+        }
+        &-img.element-animation.element-show{
+            opacity: 1;
+            transform: translateX(0);
+        }
+
         &-info{
             padding: 137px 50px;
             h3{
@@ -599,11 +629,22 @@ header.fixed:hover{
                 }
             }
         }
+        &-info.element-animation{
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 1s;
+        }
+        &-info.element-animation.element-show{
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }
 .reverse{
     flex-direction: row-reverse;
+  
 }
+
 
 .tranding{
    
@@ -742,4 +783,13 @@ header.fixed:hover{
             }
         }
     }
+}
+.tranding.element-animation{
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 1s;
+}
+.tranding.element-animation.element-show{
+    opacity: 1;
+    transform: translateY(0);
 }

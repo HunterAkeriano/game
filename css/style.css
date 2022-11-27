@@ -9,10 +9,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 body,
 h1,
 h2,
@@ -44,6 +40,9 @@ a {
 body {
   font-family: "Poppins", sans-serif;
   font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .pages__info {
@@ -386,6 +385,15 @@ header.fixed:hover {
   margin-top: 5px;
   color: #FFFFFF;
 }
+.coding__left.element-animation {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1.5s;
+}
+.coding__left.element-animation.element-show {
+  transform: translateX(0px);
+  opacity: 1;
+}
 .coding__right {
   position: relative;
 }
@@ -492,12 +500,30 @@ header.fixed:hover {
   font-size: 12px;
 }
 
+.platform.element-animation {
+  opacity: 0;
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
 .courses {
   margin-top: 160px;
 }
 .courses__top {
   display: flex;
   justify-content: space-between;
+}
+.courses__top-img.element-animation {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 1s;
+}
+.courses__top-img.element-animation.element-show {
+  opacity: 1;
+  transform: translateX(0);
 }
 .courses__top-info {
   padding: 137px 50px;
@@ -567,6 +593,15 @@ header.fixed:hover {
 .courses__top-info .courses-btn a:hover {
   font-size: 20px;
   font-weight: 700;
+}
+.courses__top-info.element-animation {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 1s;
+}
+.courses__top-info.element-animation.element-show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .reverse {
@@ -701,4 +736,15 @@ header.fixed:hover {
   background: white;
   color: #22A45A;
   border: 1px solid #fff;
+}
+
+.tranding.element-animation {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 1s;
+}
+
+.tranding.element-animation.element-show {
+  opacity: 1;
+  transform: translateY(0);
 }/*# sourceMappingURL=style.css.map */
